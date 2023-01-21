@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/pods.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!--link to swiper js-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+    <title>JBL site</title>
+</head>
+<body>
+    <!-- Main Container -->
+    <div class="main">
+        <!-- Header -->
+        <header>
+            <!-- Navbar -->
+            <div class="nav">
+                <!-- Logo -->
+                <a href="#" class="logo">
+                    <img src="/img/j.b.l.png" alt="site logo">
+                </a>
+               
+                <!-- Nav links and Cart -->
+                
+                <div class="navbar">
+                    <li><a href="/index.html#Pods">« Back</a></li>
+                    <li><a href="#Home">Home</a></li>
+                    <div class="dropdown">
+                        <button>Pods</button>
+                        <div class="dropdown-content">
+                            <a href="#Wireless Earbuds">Wireless Earbuds</a>
+                            <a href="#Earphones">Earphones</a>
+                            <a href="#For Sports">For Sports</a>
+                        </div>
+                    </div>
+                </div>
+                   
+               <!-- Cart Icon -->
+                <div class="cart-icon"><i class='bx bx-cart-alt'></i></i><span>0</span></div>
+
+                <!--Cart-->
+                <div class="cart">
+                    <h2 class="cart-title">Shops Cart</h2>
+                    <!-- content-->
+                    <div class="cart-content">
+
+                    <!--  <div class="cart-box">
+                            <img src=" " alt="" class="cart-img">
+                            <div class="detail-box">
+                                <div class="cart-product-title"></div>
+                                <div class="cart-price"></div>
+                                <input type="number" value="1" class="cart-number">
+                            
+                            </div>
+                            //Remove Cart
+                            <i class="bx bxs-trash cart-remove"></i>
+                        </div> -->
+                    </div>
+                    <!--Total-->
+                    <div class="total">
+                        <div class="total-title">Total</div>
+                        <div class="total-price">$0</div>
+                    </div>
+                    <!--Buy Button-->
+                    <button type="button" class="buy-btn">Buy Now</button>
+                    <!--to close cart-->
+                    <i class='bx bx-x' id= 'close-cart' ></i>
+                </div>
+                <!-- Menu Icon -->
+                <i class='bx bx-menu-alt-left' id="menu-icon"></i>
+            </div>
+        </header>
+
+        <!-- Home -->
+        <section class="home swiper" id="Home">
+            <div class="swiper-wrapper">
+                <!-- Home Content  container-->
+                <div class="home-content container swiper-slide">
+                    <div class="home-img one">
+                        <img src="https://uk.jbl.com/dw/image/v2/BFND_PRD/on/demandware.static/-/Sites-masterCatalog_Harman/default/dw9e6b51ae/4.JBL_Tune_Flex_Product%20Image_Back_Blue.png?sw=680&sh=680" alt="">
+                    </div>
+                    <!-- Home Text -->
+                    <div class="home-text one">
+                        <h1>JBL Tune Flex</h1>
+                        <h2>JBL Pure Bass Sound</h2>
+                        <p>Smartly designed 12mm drivers enhanced by the stick form factor deliver JBL's Pure Bass Sound so you'll feel every pulsing beat.</p>
+                        <a href="#Wireless Earbuds" class="btn ">
+                            <i class='bx bx-shopping-bag'></i>
+                            <span>Shop Now</span>
+                        </a>
+                    </div>
+                </div>    
+                <div class="home-content container swiper-slide">
+                    <div class="home-img">
+                        <img src="https://uk.jbl.com/dw/image/v2/BFND_PRD/on/demandware.static/-/Sites-masterCatalog_Harman/default/dw5d10462a/1.JBL_ENDURANCE_PEAK_3_Product%20Image_Hero_Coral.png?sw=453&sh=453" alt="">
+                    </div>
+                    <!-- Home Text -->
+                    <div class="home-text">
+                        <h1>JBL Endurance Peak 3</h1>
+                        <h2>Up to 50 total hours of playback with speed charge</h2>
+                        <p>Powerhook™ design for an ergonomic fit, IP68 dust and water proof</p>
+                        <a href="#Earphones" class="btn ">
+                            <i class='bx bx-shopping-bag'></i>
+                            <span>Shop Now</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="home-content container swiper-slide">
+                    <div class="home-img">
+                        <img src="https://uk.jbl.com/dw/image/v2/BFND_PRD/on/demandware.static/-/Sites-masterCatalog_Harman/default/dwe7ec7c77/1.JBL_Reflect%20Aero_Product%20Image_Hero_Mint.png?sw=453&sh=453" alt="">
+                    </div>
+                    <!-- Home Text -->
+                    <div class="home-text">
+                        <h1>JBL Reflect Aero TWS</h1>
+                        <h2>True Adaptive Noise Cancelling(4-mic) with Smart Ambient</h2>
+                        <p>Extreme dustproof and waterproof, Comfortable, secure fit, 8 + 16 hours of fast-charging battery life </p>
+                        <a href="#For Sports" class="btn ">
+                            <i class='bx bx-shopping-bag'></i>
+                            <span>Shop Now</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </section>
+       
+        <!-- Shop -->
+        <section class="shop" id="shop">
+            <!-- Heading -->
+            <h2 class="heading">Shop Now</h2>
+            <!-- Shop Content -->
+            <div class="shop-content container">
+               <h3 class="shop-title" id="Wireless Earbuds">Wireless Earbuds</h3>
+               <div class="shop-container container">
+                    <!-- 1st Box -->
+                    <div class="box">
+                        <img class="product-img" src="https://uk.jbl.com/dw/image/v2/BFND_PRD/on/demandware.static/-/Sites-masterCatalog_Harman/default/dw687491ad/1.JBL_Wave%20Flex_Product%20Image_Hero%2001_Blue.png?sw=300&sh=300" alt="">
+                        <h3 class="product-title">JBL Wave Flex</h3>
+                        <span class="price">$69.99</span>
+                        <i class='bx bx-cart-alt add-cart'></i>
+                    </div>
+                    <!-- 2nd Box -->
+                    <div class="box">
+                        <img class="product-img" src="https://uk.jbl.com/dw/image/v2/BFND_PRD/on/demandware.static/-/Sites-masterCatalog_Harman/default/dw49134dc5/1.JBL_Wave_Vibe_Beam_Product%20Image_Hero_White.png?sw=300&sh=300" alt="">
+                        <h3 class="product-title">JBL Wave Beam</h3>
+                        <span class="price">$79.99</span>
+                        <i class='bx bx-cart-alt add-cart'></i>
+                    </div>
+                    <!-- 3rd Box -->
+                    <div class="box">
+                        <img class="product-img" src="https://uk.jbl.com/dw/image/v2/BFND_PRD/on/demandware.static/-/Sites-masterCatalog_Harman/default/dwcadb05b5/1.JBL_Live%20Pro%202_Product%20image_Hero_Blue.png?sw=300&sh=300" alt="">
+                        <h3 class="product-title">JBL Live Pro 2 TWS</h3>
+                        <span class="price">$129.99</span>
+                        <i class='bx bx-cart-alt add-cart'></i>
+                    </div>
+                    <!-- 4th Box -->
+                    <div class="box">
+                        <img class="product-img" src="https://uk.jbl.com/dw/image/v2/BFND_PRD/on/demandware.static/-/Sites-masterCatalog_Harman/default/dw0431f6aa/1.JBL_Wave_VIBE_100TWS_Product%20Images_Hero_Black.png?sw=300&sh=300" alt="">
+                        <h3 class="product-title">JBL Wave 100TWS</h3>
+                        <span class="price">$59.98</span>
+                        <i class='bx bx-cart-alt add-cart'></i>
+                    </div>
+                    <!-- 5th Box -->
+                    <div class="box">
+                        <img class="product-img" src="https://uk.jbl.com/dw/image/v2/BFND_PRD/on/demandware.static/-/Sites-masterCatalog_Harman/default/dw4c703cba/1.JBL_Tune%20Flex_Product%20Image_Hero_Blue.png?sw=300&sh=300" alt="">
+                        <h3 class="product-title">JBL Tune Flex</h3>
+                        <span class="price">$76.98</span>
+                        <i class='bx bx-cart-alt add-cart'></i>
+                    </div>
+                    <!-- 6th Box -->
+                    <div class="box">
+                        <img class="product-img" src="https://uk.jbl.com/dw/image/v2/BFND_PRD/on/demandware.static/-/Sites-masterCatalog_Harman/default/dw66bf0580/1.JBL_ENDURANCE_PEAK_3_Product%20Image_Hero_Black.png?sw=300&sh=300" alt="">
+                        <h3 class="product-title">JBL Endurance Peak 3</h3>
+                        <span class="price">$89.98</span>
+                        <i class='bx bx-cart-alt add-cart'></i>
+                    </div>
+               </div>
+            </div>
+            <div class="shop-content container">
+               <h3 class="shop-title" id="Earphones">Earphones</h3>
+               <div class="shop-container container">
+                    <!-- 1st Box -->
+                    <div class="box">
+                        <img class="product-img" src="https://uk.jbl.com/dw/image/v2/BFND_PRD/on/demandware.static/-/Sites-masterCatalog_Harman/default/dw66bf0580/1.JBL_ENDURANCE_PEAK_3_Product%20Image_Hero_Black.png?sw=300&sh=300" alt="">
+                        <h3 class="product-title">JBL Endurance Peak 3</h3>
+                        <span class="price">$90.98</span>
+                        <i class='bx bx-cart-alt add-cart'></i>
+                    </div>
+                    <!-- 2nd Box -->
+                    <div class="box">
+                        <img class="product-img" src="https://uk.jbl.com/dw/image/v2/BFND_PRD/on/demandware.static/-/Sites-masterCatalog_Harman/default/dw450c4101/1.JBL_Reflect%20Mini%20NC_Product%20Image_Hero_Black.png?sw=300&sh=300" alt="">
+                        <h3 class="product-title">JBL Reflect Mini NC</h3>
+                        <span class="price">$199.99</span>
+                        <i class='bx bx-cart-alt add-cart'></i>
+                    </div>
+                    <!-- 3rd Box -->
+                    <div class="box">
+                        <img class="product-img" src="https://uk.jbl.com/dw/image/v2/BFND_PRD/on/demandware.static/-/Sites-masterCatalog_Harman/default/dw687491ad/1.JBL_Wave%20Flex_Product%20Image_Hero%2001_Blue.png?sw=300&sh=300" alt="">
+                        <h3 class="product-title">JBL Wave Flex</h3>
+                        <span class="price">$69.99</span>
+                        <i class='bx bx-cart-alt add-cart'></i>
+                    </div>
+                    <!-- 4th Box -->
+                    <div class="box">
+                        <img class="product-img" src="https://uk.jbl.com/dw/image/v2/BFND_PRD/on/demandware.static/-/Sites-masterCatalog_Harman/default/dw009bb2ea/1.JBL_Wave_300TWS_Product%20Image_Hero_Black.png?sw=300&sh=300" alt="">
+                        <h3 class="product-title">JBL Wave 300TWS</h3>
+                        <span class="price">$49.98</span>
+                        <i class='bx bx-cart-alt add-cart'></i>
+                    </div>
+                    <!-- 5th Box -->
+                    <div class="box">
+                        <img class="product-img" src="https://uk.jbl.com/dw/image/v2/BFND_PRD/on/demandware.static/-/Sites-masterCatalog_Harman/default/dw972b862a/1.JBL_TUNE_230NC_Product%20image_Hero_White.png?sw=300&sh=300" alt="">
+                        <h3 class="product-title">JBL Tune 230NC TWS</h3>
+                        <span class="price">$79.99</span>
+                        <i class='bx bx-cart-alt add-cart'></i>
+                    </div>
+                    <!-- 6th Box -->
+                    <div class="box">
+                        <img class="product-img" src="https://uk.jbl.com/dw/image/v2/BFND_PRD/on/demandware.static/-/Sites-masterCatalog_Harman/default/dw4c199464/JBL_LIVE%20PRO+_TWS_Product%20Image_Hero%202_Sand.png?sw=680&sh=680" alt="">
+                        <h3 class="product-title">JBL Live Pro+ TWS</h3>
+                        <span class="price">$49.99</span>
+                        <i class='bx bx-cart-alt add-cart'></i>
+                    </div>
+               </div>
+            </div>
+            <div class="shop-content container">
+               <h3 class="shop-title" id="For Sports">For Sports</h3>
+               <div class="shop-container container">
+                    <!-- 1st Box -->
+                    <div class="box">
+                        <img class="product-img" src="https://uk.jbl.com/dw/image/v2/BFND_PRD/on/demandware.static/-/Sites-masterCatalog_Harman/default/dw450c4101/1.JBL_Reflect%20Mini%20NC_Product%20Image_Hero_Black.png?sw=300&sh=300" alt="">
+                        <h3 class="product-title">JBL Reflect Mini NC</h3>
+                        <span class="price">$49.98</span>
+                        <i class='bx bx-cart-alt add-cart'></i>
+                    </div>
+                    <!-- 2nd Box -->
+                    <div class="box">
+                        <img class="product-img" src="https://uk.jbl.com/dw/image/v2/BFND_PRD/on/demandware.static/-/Sites-masterCatalog_Harman/default/dwa17e0bc5/JBL_REFLECT_FLOW_PRO_Product%20Image_Earbuds%20Detail_Blue.png?sw=680&sh=680" alt="">
+                        <h3 class="product-title">JBL Reflect Flow Pro</h3>
+                        <span class="price">$99.99</span>
+                        <i class='bx bx-cart-alt add-cart'></i>
+                    </div>
+                    <!-- 3rd Box -->
+                    <div class="box">
+                        <img class="product-img" src="https://uk.jbl.com/dw/image/v2/BFND_PRD/on/demandware.static/-/Sites-masterCatalog_Harman/default/dwe7ec7c77/1.JBL_Reflect%20Aero_Product%20Image_Hero_Mint.png?sw=680&sh=680" alt="">
+                        <h3 class="product-title">JBL Reflect Aero TWS</h3>
+                        <span class="price">$119.98</span>
+                        <i class='bx bx-cart-alt add-cart'></i>
+                    </div>
+                    <!-- 4th Box -->
+                    <div class="box">
+                        <img class="product-img" src="https://uk.jbl.com/dw/image/v2/BFND_PRD/on/demandware.static/-/Sites-masterCatalog_Harman/default/dw66bf0580/1.JBL_ENDURANCE_PEAK_3_Product%20Image_Hero_Black.png?sw=300&sh=300" alt="">
+                        <h3 class="product-title">JBL Endurance Peak 3</h3>
+                        <span class="price">$90.98</span>
+                        <i class='bx bx-cart-alt add-cart'></i>
+                    </div>
+               </div>
+            </div>
+
+        </section>
+        <!--    Footer -->
+        <section class="footer">
+           <div class="footer-content container">
+                <div class="footer-box">
+                    <a href="" class="logo"><img src="/img/j.b.l.png" alt=""></a>
+                    <div class="social">
+                        <a href="https://www.instagram.com/val_hunter_/" target="_blank"><i class='bx bxl-instagram'></i></a>
+                        <a href="https://twitter.com/val_hunter_" target="_blank"><i class='bx bxl-twitter'></i></a>
+                        <a href="https://api.whatsapp.com/send/?phone=2347011735361&text&type=phone_number&app_absent=0" target="_blank"><i class='bx bxl-whatsapp'></i></a>
+                        <a href="https://www.linkedin.com/in/chukwuemeka-ogbanu-65791b244/" target="_blank"><i class='bx bxl-linkedin'></i></a>
+                        <a href="https://github.com/Favour-OGB" target="_blank"><i class='bx bxl-github'></i></a>
+                    </div>
+                </div>
+                <div class="footer-box">
+                    <h2>Products</h2>
+                    <a href="#">Headphones</a>
+                    <a href="#">Speakers</a>
+                    <a href="#">Pods</a>
+                    <a href="#">Earpiece</a>
+                </div>
+                <div class="footer-box">
+                    <h2>Payment</h2>
+                    <a href="#">Return Policy</a>
+                    <a href="#">Refunds Policy</a>
+                    <a href="#">Support</a>
+                    <a href="#">Terms Of Use</a>
+                </div>
+           </div>
+        </section>
+        <!-- Copyright -->
+        <div class="copyright">
+            <p>&#169; ValHunter All Rights Reserved</p>
+        </div>
+    </div>
+
+    <!-- ScrollReveal Animation -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- Script to swiper js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <!-- JS Link -->
+    <script src="main.js"></script>
+</body>
+</html>
