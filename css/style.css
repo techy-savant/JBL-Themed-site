@@ -274,19 +274,26 @@ header.shadow{
 
 
 /* Home section */
+
 .home-content{
     max-width: 100%;
     padding: 0 20px;
     padding: 50px;
-    min-height: 640px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    
+    display: flex;
+    
     column-gap: 50px;
     align-items: center;
+    justify-content: center;
 }
 .home-text{
-    justify-self: center;
+    text-align: center;
 }
+.home-img{
+    width: 50%;
+    margin: 0 auto;
+}
+
 .home-text h1{
     font-size: 3.4rem;
     margin-bottom: 1rem;
@@ -526,6 +533,9 @@ header.shadow{
     .shop-content a{
         align-self: flex-start;
         margin-left: 35px;
+    }
+    .home-content{
+        min-height: 640px;
     }
 }
 @media (max-width: 768px){
