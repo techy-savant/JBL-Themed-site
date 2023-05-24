@@ -77,35 +77,34 @@ if (document.readyState == "loading") {
 // Making Function
 function ready() {
   //Remove Items from cart
-  var removeCartButtons = document.getElementsByClassName("cart-remove");
-  console.log(removeCartButtons);
-  for (var i = 0; i < removeCartButtons.length; i++) {
-    var button = removeCartButtons[i];
-    button.addEventListener("click", removeCartItem);
-  }
+  var removeCartButtons = document.querySelectorAll(".cart-remove");
+  // console.log(removeCartButtons);
+  removeCartButtons.forEach((removeBtn)=>{
+    removeBtn.addEventListener("click", removeCartItem);
+  });
+ 
   //Quantity Change
-  var quantityInputs = document.getElementsByClassName("cart-number");
-  for (var i = 0; i < removeCartButtons.length; i++) {
-    var input = quantityInputs[i];
-    input.addEventListener("change", quantityChanged);
-  }
-  // Add to Cart
-  var addCart = document.getElementsByClassName("add-cart");
-  for (var i = 0; i < addCart.length; i++) {
-    var button = addCart[i];
-    button.addEventListener("click", addCartClicked);
-  }
+  var quantityInputs = document.querySelectorAll(".cart-number");
+  quantityInputs.forEach((qInput)=>{
+    qInput.addEventListener("change", quantityChanged);
+  });
+  
+  //  Shop-Items cart button click Event
+  var ItemButtons = document.querySelectorAll(".add-cart");
+  ItemButtons.forEach((itemButton)=>{
+    itemButton.addEventListener("click", CartClicked);
+  });
+  
   //Making Buy Button Work
-  document
-    .getElementsByClassName("buy-btn")[0]
-    .addEventListener("click", buyButtonClicked);
+  document.querySelector(".buy-btn").addEventListener("click", buyButtonClicked);
 }
 //BUY BUTTON Function
 function buyButtonClicked() {
   alert("Order Placed successfully");
-  var cartContent = document.getElementsByClassName("cart-content")[0];
+  var cartContent = document.querySelector(".cart-content");
   while (cartContent.hasChildNodes()) {
-    cartContent.removeChild(cartContent.firstChild);
+    //while there are cart elements, each one is removed till none remains, thereby clearing cart completely
+    cartContent.removeChild(cartContent.firstChild); 
   }
   updateTotal();
 }
@@ -118,20 +117,20 @@ function removeCartItem(event) {
 }
 
 //Quantity Changes
-function quantityChanged(event) {
-  var input = event.target;
+function quantityChanged(e) {
+  var input = e.target;
   if (isNaN(input.value) || input.value <= 0) {
     input.value = 1;
   }
   updateTotal();
 }
-// ADDING TO CART
-function addCartClicked(event) {
-  var button = event.target;
+//  Adding Item to Cart when cartbtn is clicked (function)
+function CartClicked(e) {
+  var button = e.target;
   var shopProducts = button.parentElement;
-  var title = shopProducts.getElementsByClassName("product-title")[0].innerText;
-  var price = shopProducts.getElementsByClassName("price")[0].innerText;
-  var productImg = shopProducts.getElementsByClassName("product-img")[0].src;
+  var title = shopProducts.querySelector(".product-title").innerText;
+  var price = shopProducts.querySelector(".price").innerText;
+  var productImg = shopProducts.querySelector(".product-img").src;
   addProductToCart(title, price, productImg);
   updateTotal();
 }
@@ -139,17 +138,16 @@ function addProductToCart(title, price, productImg) {
   //function adds items to cart
   var cartShopBox = document.createElement("div");
   cartShopBox.classList.add("cart-box");
-  var cartItems = document.querySelector(".cart-content");
-  var cartBoxes = cartItems.getElementsByClassName("cart-box");
+  var cartContent = document.querySelector(".cart-content");
+  var cartBoxes = cartContent.querySelectorAll(".cart-box");
 
   // This logs the title of the product to be added.
   // console.log("\ntitle of product to be added " + title + "\n***************");
 
+ 
   if (cartBoxes) {
     for (var i = 0; i < cartBoxes.length; i++) {
-      var temp = cartBoxes[i]
-        .getElementsByClassName("detail-box")[0]
-        .querySelector(".cart-product-title").innerText;
+      var temp = cartBoxes[i].querySelector(".detail-box .cart-product-title").innerText;
 
       // This logs the title of products in the cart already.
       // console.log("Title of product " + (i + 1) + " in cart is " + temp);
@@ -160,6 +158,7 @@ function addProductToCart(title, price, productImg) {
       }
     }
   }
+
 
   var cartBoxContent = `
     <img src="${productImg}" alt="" class="cart-img">
@@ -174,34 +173,33 @@ function addProductToCart(title, price, productImg) {
     `;
 
   cartShopBox.innerHTML = cartBoxContent;
-  cartItems.append(cartShopBox);
-  cartShopBox
-    .getElementsByClassName("cart-remove")[0]
-    .addEventListener("click", removeCartItem);
-  cartShopBox
-    .getElementsByClassName("cart-number")[0]
-    .addEventListener("change", quantityChanged);
+  cartContent.append(cartShopBox);
+  cartShopBox.querySelector(".cart-remove").addEventListener("click", removeCartItem);
+  cartShopBox.querySelector(".cart-number").addEventListener("change", quantityChanged);
 }
 
 //Updating Total
 function updateTotal() {
-  var cartcontent = document.getElementsByClassName("cart-content")[0];
-  var cartBoxes = cartcontent.getElementsByClassName("cart-box");
+  var cartcontent = document.querySelector(".cart-content");
+  var cartBoxes = cartcontent.querySelectorAll(".cart-box");
   var total = 0;
-  for (var i = 0; i < cartBoxes.length; i++) {
-    var cartBox = cartBoxes[i];
-    var priceElement = cartBox.getElementsByClassName("cart-price")[0];
-    var quantityElement = cartBox.getElementsByClassName("cart-number")[0];
+  cartBoxes.forEach((cartBox)=>{
+    var priceElement = cartBox.querySelector(".cart-price");
+    var quantityElement = cartBox.querySelector(".cart-number");
     var price = parseFloat(priceElement.innerText.replace("$", "")); //replace dollar sign with empty space
     var quantity = quantityElement.value;
     total = total + price * quantity;
     //if price Contain some Cents Value
     total = Math.round(total * 100) / 100;
-  }
+  })
+
   updateCartNumber = document.querySelector(".cart-icon span"); //to update number on cart-icon
   updateCartNumber.textContent = cartBoxes.length;
-  document.getElementsByClassName("total-price")[0].innerText = "$" + total;
+  // console.log(updateCartNumber);
+  document.querySelector(".total-price").innerText = "$" + total;
 }
+
+
 
 //Swiper
 
