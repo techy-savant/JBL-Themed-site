@@ -26,6 +26,7 @@ html::-webkit-scrollbar-thumb{
     border-radius: 2rem;
     background: var(--text-color);
 }
+
 img{
     width: 100%;
 }
@@ -50,6 +51,13 @@ section{
 }
 .swiper-pagination-bullet-active{
     background: #3F4E4F !important;
+}
+/* Major Container */
+.major-container.toggle{
+    filter: blur(6px);
+    pointer-events: none;
+    scroll-behavior: none;
+    overflow: hidden;
 }
 header{
     display: block;
@@ -173,6 +181,24 @@ header.shadow{
     box-shadow: -2px 0 4px hsl(0 4% 15% / 10%);
     transition: all .4s;
 }
+.cart-content{
+    
+    position: relative;
+    overflow-y: auto;
+    max-height: 400px;
+    overflow-x: hidden;
+    
+}
+/* Cart-Content Custom ScrollBar */
+.cart-content::-webkit-scrollbar{
+    width: .5rem;
+    background: #d5d4d4;
+}
+.cart-content::-webkit-scrollbar-thumb{
+    border-radius: 2rem;
+    background: var(--text-color);
+}
+
 .cart::-webkit-scrollbar{
     width: .5rem;
     background: #2e2e2e;
@@ -193,10 +219,11 @@ header.shadow{
 }
 .cart-box{
     display: grid;
-    grid-template-columns: 32% 50% 18%;
+    grid-template-columns: 30% 50% 15%;
     align-items: center;
     gap: 1rem;
     margin-top: 1.5rem;
+    
 }
 .cart-img{
     width: 100px;

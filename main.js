@@ -2,6 +2,7 @@
 
 let header = document.querySelector("header");
 
+
 window.addEventListener("scroll", () => {
   header.classList.toggle("shadow", window.scrollY > 0);
 });
@@ -53,17 +54,23 @@ let cart_icon = document.querySelector(".cart-icon");
 let cart = document.querySelector(".cart");
 let close_cart = document.querySelector("#close-cart");
 
+//major container declaration
+let majorContainer = document.querySelector('.major-container');
+
+
 cart_icon.onclick = () => {
   // major_container.classList.toggle("cont-active"); //blurs other components when cart is clicked
   cart.classList.add("active");
   cart_icon.classList.add("active");
   menu.classList.add("active"); //to remove menu icon
+  majorContainer.classList.add('toggle'); //to add toggle class in css which blurs other content
 };
 close_cart.onclick = () => {
   // major_container.classList.remove("cont-active");
   cart.classList.remove("active");
   cart_icon.classList.remove("active");
   menu.classList.remove("active"); //to remove menu icon
+  majorContainer.classList.remove('toggle'); //to remove toggle class in css to unblur other content
 };
 
 //JS for cart
@@ -100,13 +107,19 @@ function ready() {
 }
 //BUY BUTTON Function
 function buyButtonClicked() {
-  alert("Order Placed successfully");
   var cartContent = document.querySelector(".cart-content");
-  while (cartContent.hasChildNodes()) {
-    //while there are cart elements, each one is removed till none remains, thereby clearing cart completely
-    cartContent.removeChild(cartContent.firstChild); 
+  var cartBoxes = cartContent.querySelectorAll(".cart-box");
+
+  if (cartContent.childElementCount === 0) {
+    alert("Zero Items In Cart");
+  } else {
+    // Perform the normal function here
+    alert("Order Placed successfully");
+    while (cartContent.hasChildNodes()) {
+      cartContent.removeChild(cartContent.firstChild);
+    }
+    updateTotal();
   }
-  updateTotal();
 }
 
 //Remove Items from cart

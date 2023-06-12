@@ -10,10 +10,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
     <title>JBL site</title>
 </head>
-<body onload="localStorage.clear()">
-    <script>
-        document.onload = localStorage.clear();
-    </script>
+<body>
+
     <!-- Main Container -->
     <div class="main">
         <!-- Header -->
@@ -24,7 +22,7 @@
                 <a href="#" class="logo">
                     <img src="/img/j.b.l.png" alt="site logo">
                 </a>
-               
+            
                 <!-- Nav links and Cart -->
                 
                 <div class="navbar">
@@ -39,8 +37,8 @@
                         </div>
                     </div>
                 </div>
-                   
-               <!-- Cart Icon -->
+                
+                <!-- Cart Icon -->
                 <div class="cart-icon"><i class='bx bx-cart-alt'></i></i><span>0</span></div>
 
                 <!--Cart-->
@@ -71,335 +69,342 @@
                     <!--to close cart-->
                     <i class='bx bx-x' id= 'close-cart' ></i>
                 </div>
+
                 <!-- Menu Icon -->
                 <i class='bx bx-menu-alt-left' id="menu-icon"></i>
             </div>
         </header>
 
-        <!-- Home -->
-        <section class="home container swiper" id="Home">
-            <div class="swiper-wrapper">
-                <!-- Home Content  container-->
-                <div class="home-content container swiper-slide">
-                    <div class="home-img one">
-                        <img src="https://www.jbl.es/dw/image/v2/BFND_PRD/on/demandware.static/-/Sites-masterCatalog_Harman/default/dwa71e5cfd/1.JBL_TUNE_760NC_Product%20Image_Hero_Black.png?sw=453&sh=453" alt="">
+        <div class="major-container">
+                        <!-- Home -->
+            <section class="home container swiper" id="Home">
+                <div class="swiper-wrapper">
+                    <!-- Home Content  container-->
+                    <div class="home-content container swiper-slide">
+                        <div class="home-img one">
+                            <img src="https://www.jbl.es/dw/image/v2/BFND_PRD/on/demandware.static/-/Sites-masterCatalog_Harman/default/dwa71e5cfd/1.JBL_TUNE_760NC_Product%20Image_Hero_Black.png?sw=453&sh=453" alt="">
+                        </div>
+                        <!-- Home Text -->
+                        <div class="home-text one">
+                            <h1>JBL Tune 760NC</h1>
+                            <h2>JBL Signature Sound</h2>
+                            <p>40mm drivers and a sound signature that can be found in the most famous venues all around the world.</p>
+                            <a href="#Headphones" class="btn ">
+                                <i class='bx bx-shopping-bag'></i>
+                                <span>Shop Now</span>
+                            </a>
+                        </div>
                     </div>
-                    <!-- Home Text -->
-                    <div class="home-text one">
-                        <h1>JBL Tune 760NC</h1>
-                        <h2>JBL Signature Sound</h2>
-                        <p>40mm drivers and a sound signature that can be found in the most famous venues all around the world.</p>
-                        <a href="#Headphones" class="btn ">
-                            <i class='bx bx-shopping-bag'></i>
-                            <span>Shop Now</span>
-                        </a>
+                    <div class="home-content container swiper-slide">
+                        <div class="home-img">
+                            <img src="https://ca.jbl.com/dw/image/v2/AAUJ_PRD/on/demandware.static/-/Sites-masterCatalog_Harman/default/dw2530d28f/JBL_XTREME_3_HERO_0010_x2.png?sw=537&sfrm=png" alt="">
+                        </div>
+                        <!-- Home Text -->
+                        <div class="home-text">
+                            <h1>JBL Xtreme 3</h1>
+                            <h2>JBL Signature Sound</h2>
+                            <p>Portable Waterproof Speakers</p>
+                            <a href="#Speakers" class="btn ">
+                                <i class='bx bx-shopping-bag'></i>
+                                <span>Shop Now</span>
+                            </a>
+                        </div>
                     </div>
-                </div>
-                <div class="home-content container swiper-slide">
-                    <div class="home-img">
-                        <img src="https://ca.jbl.com/dw/image/v2/AAUJ_PRD/on/demandware.static/-/Sites-masterCatalog_Harman/default/dw2530d28f/JBL_XTREME_3_HERO_0010_x2.png?sw=537&sfrm=png" alt="">
-                    </div>
-                    <!-- Home Text -->
-                    <div class="home-text">
-                        <h1>JBL Xtreme 3</h1>
-                        <h2>JBL Signature Sound</h2>
-                        <p>Portable Waterproof Speakers</p>
-                        <a href="#Speakers" class="btn ">
-                            <i class='bx bx-shopping-bag'></i>
-                            <span>Shop Now</span>
-                        </a>
-                    </div>
-                </div>
-                <div class="home-content container swiper-slide">
-                    <div class="home-img">
-                        <img src="https://ca.jbl.com/dw/image/v2/AAUJ_PRD/on/demandware.static/-/Sites-masterCatalog_Harman/default/dw02c3dba7/1.JBL_Wave_VIBE_100TWS_Product%20Images_Hero_Blue.png?sw=537&sfrm=png" alt="">
-                    </div>
-                    <!-- Home Text -->
-                    <div class="home-text">
-                        <h1>JBL Vibe 100TWS</h1>
-                        <h2>JBL Signature Sound</h2>
-                        <p>True Wireless Earbuds. Great sound, no-frills and no-wires</p>
-                        <a href="#Pods" class="btn ">
-                            <i class='bx bx-shopping-bag'></i>
-                            <span>Shop Now</span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="swiper-pagination"></div>
-        </section>
-        <!-- About -->
-        <section class="features" id="Features">
-            <h1 class="heading">Features</h1>
-            <!-- About content -->
-            <div class="feature-container container">
-                <div class="feature-details">
-                    <div class="box">
-                        <i class='bx bxs-battery-charging'></i>
-                        <h3>Up to 50 hours of battery life and Speed Charge</h3>
-                        <p>Rock on for up to 50 hours (or up to 40 hours with ANC and BT on)! Then, stop for a quick 10-minute charge to get extra 4-hour fun. Your headphones should adjust to you, not the other way around.  JBL Live 660NC headphones sound and features can be easily personalized with the My JBL Headphones free App: change the EQ sets, select your preferred Voice Assistant, set your Smart Ambient settings and much more, downloading the free App.</p>
-                    </div>
-                    <div class="box">
-                        <i class='bx bx-headphone'></i>
-                        <h3>Comfort-fit fabric headband and carrying pouch</h3>
-                        <p>Shaped around your head with a fitting fabric headband and soft ear cushions, the Live 660NC are super comfy. The soft pouch serves as protection as well as storage when you’re traveling.</p>
+                    <div class="home-content container swiper-slide">
+                        <div class="home-img">
+                            <img src="https://ca.jbl.com/dw/image/v2/AAUJ_PRD/on/demandware.static/-/Sites-masterCatalog_Harman/default/dw02c3dba7/1.JBL_Wave_VIBE_100TWS_Product%20Images_Hero_Blue.png?sw=537&sfrm=png" alt="">
+                        </div>
+                        <!-- Home Text -->
+                        <div class="home-text">
+                            <h1>JBL Vibe 100TWS</h1>
+                            <h2>JBL Signature Sound</h2>
+                            <p>True Wireless Earbuds. Great sound, no-frills and no-wires</p>
+                            <a href="#Pods" class="btn ">
+                                <i class='bx bx-shopping-bag'></i>
+                                <span>Shop Now</span>
+                            </a>
+                        </div>
                     </div>
                 </div>
-                <div class="feature-img">
-                    <img src="https://ca.jbl.com/dw/image/v2/AAUJ_PRD/on/demandware.static/-/Sites-masterCatalog_Harman/default/dw3b65f4cd/JBL_LIVE_660NC_Product_Image_Fold_Black.png?sw=537&sfrm=png" alt="">
+                <div class="swiper-pagination"></div>
+            </section>
+            <!-- About -->
+            <section class="features" id="Features">
+                <h1 class="heading">Features</h1>
+                <!-- About content -->
+                <div class="feature-container container">
+                    <div class="feature-details">
+                        <div class="box">
+                            <i class='bx bxs-battery-charging'></i>
+                            <h3>Up to 50 hours of battery life and Speed Charge</h3>
+                            <p>Rock on for up to 50 hours (or up to 40 hours with ANC and BT on)! Then, stop for a quick 10-minute charge to get extra 4-hour fun. Your headphones should adjust to you, not the other way around.  JBL Live 660NC headphones sound and features can be easily personalized with the My JBL Headphones free App: change the EQ sets, select your preferred Voice Assistant, set your Smart Ambient settings and much more, downloading the free App.</p>
+                        </div>
+                        <div class="box">
+                            <i class='bx bx-headphone'></i>
+                            <h3>Comfort-fit fabric headband and carrying pouch</h3>
+                            <p>Shaped around your head with a fitting fabric headband and soft ear cushions, the Live 660NC are super comfy. The soft pouch serves as protection as well as storage when you’re traveling.</p>
+                        </div>
+                    </div>
+                    <div class="feature-img">
+                        <img src="https://ca.jbl.com/dw/image/v2/AAUJ_PRD/on/demandware.static/-/Sites-masterCatalog_Harman/default/dw3b65f4cd/JBL_LIVE_660NC_Product_Image_Fold_Black.png?sw=537&sfrm=png" alt="">
+                    </div>
                 </div>
-            </div>
-        </section>
-        <!-- Shop -->
-        <section class="shop" id="shop">
-            <!-- Heading -->
-            <h2 class="heading">Shop Now</h2>
-            <!-- Shop Content -->
-            <div class="shop-content container">
-               <h3 class="shop-title" id="Headphones">Headphones</h3>
-               <div class="shop-container container">
-                   <!-- 1st Box -->
-                    <div class="box">
-                        <img class="product-img" src="https://ca.jbl.com/dw/image/v2/AAUJ_PRD/on/demandware.static/-/Sites-masterCatalog_Harman/default/dw1473ec51/JBL%20Everest_Elite_750NC_Blue_Hero_1605x1605px.jpg?sw=270&sh=330&sm=fit&sfrm=png" alt="">
-                        <h3 class="product-title">JBL EVEREST™ ELITE 750NC</h3>
-                        <span class="price">$429.99</span>
-                        <i class='bx bx-cart-alt add-cart'></i>
-                    </div>
-                    <!-- 2nd Box -->
-                    <div class="box">
-                        <img class="product-img" src="https://ca.jbl.com/dw/image/v2/AAUJ_PRD/on/demandware.static/-/Sites-masterCatalog_Harman/default/dwc45003f0/JBL_LIVE_460NC_Product%20Image_Hero_White.jpg?sw=270&sh=330&sm=fit&sfrm=png" alt="">
-                        <h3 class="product-title">JBL Live 460NC</h3>
-                        <span class="price">$169.98</span>
-                        <i class='bx bx-cart-alt add-cart'></i>
-                    </div>
-                    <!-- 3rd Box -->
-                    <div class="box">
-                        <img class="product-img" src="https://ca.jbl.com/dw/image/v2/AAUJ_PRD/on/demandware.static/-/Sites-masterCatalog_Harman/default/dwe9213a1f/JBL_Tune500_Hero_Pink_1605x1605.png?sw=537&sfrm=png" alt="">
-                        <h3 class="product-title">JBL Tune 500</h3>
-                        <span class="price">$34.98</span>
-                        <i class='bx bx-cart-alt add-cart'></i>
-                    </div>
-                    <!-- 4th Box -->
-                    <div class="box">
-                        <img class="product-img" src="https://ca.jbl.com/dw/image/v2/AAUJ_PRD/on/demandware.static/-/Sites-masterCatalog_Harman/default/dw12696db0/JBL_TUNE_660NC_Product%20Image_Detail%202_Black.png?sw=537&sfrm=png" alt="">
-                        <h3 class="product-title">JBL Tune 660NC</h3>
-                        <span class="price">$299.98</span>
-                        <i class='bx bx-cart-alt add-cart'></i>
-                    </div>
-                    <!-- 5th Box -->
-                    <div class="box">
-                        <img class="product-img" src="https://ca.jbl.com/dw/image/v2/AAUJ_PRD/on/demandware.static/-/Sites-masterCatalog_Harman/default/dwb51cdc17/600BTNC_Hero_White-1605x1605px.png?sw=537&sfrm=png" alt="">
-                        <h3 class="product-title">JBL Tune 600BTNC</h3>
-                        <span class="price">$139.99</span>
-                        <i class='bx bx-cart-alt add-cart'></i>
-                    </div>
-                    <!-- 6th Box -->
-                    <div class="box">
-                        <img class="product-img" src="https://ca.jbl.com/dw/image/v2/AAUJ_PRD/on/demandware.static/-/Sites-masterCatalog_Harman/default/dwa6c2f6d2/1.%20JBL_TOUR_ONE_Product%20Image_Hero.png?sw=537&sfrm=png" alt="">
-                        <h3 class="product-title">JBL Tour One</h3>
-                        <span class="price">$399.98</span>
-                        <i class='bx bx-cart-alt add-cart'></i>
-                    </div>
-                    <!-- 7th Box -->
-                    <div class="box">
-                        <img class="product-img" src="https://ca.jbl.com/dw/image/v2/AAUJ_PRD/on/demandware.static/-/Sites-masterCatalog_Harman/default/dwdf99cd0e/JBL_CLUB_ONE_Product%20Photo_HERO.png?sw=537&sfrm=png" alt="">
-                        <h3 class="product-title">JBL CLUB ONE</h3>
-                        <span class="price">$469.98</span>
-                        <i class='bx bx-cart-alt add-cart'></i>
-                    </div>
-                    <!-- 8th Box -->
-                    <div class="box">
-                        <img class="product-img" src="https://ca.jbl.com/dw/image/v2/AAUJ_PRD/on/demandware.static/-/Sites-masterCatalog_Harman/default/dw268216eb/JBL_QUANTUM%20ONE_Product%20Image_Angle.png?sw=537&sfrm=png" alt="">
-                        <h3 class="product-title">JBL Quantum One</h3>
-                        <span class="price">$399.98</span>
-                        <i class='bx bx-cart-alt add-cart'></i>
-                    </div>
-                    <!-- 9th Box -->
-                    <div class="box">
-                        <img class="product-img" src="https://ca.jbl.com/dw/image/v2/AAUJ_PRD/on/demandware.static/-/Sites-masterCatalog_Harman/default/dw140e03b4/JBL_CLUB_950NC_Product%20Photo_HERO.png?sw=537&sfrm=png" alt="">
-                        <h3 class="product-title">JBL Club 950NC</h3>
-                        <span class="price">$349.98</span>
-                        <i class='bx bx-cart-alt add-cart'></i>
-                    </div>
-               </div>
-               <a href="/headphone.html"><pre>View all >></pre></a>
-            </div>
-
-            <div class="shop-content container">
-                <h3 class="shop-title" id="Speakers">Speakers</h3>
+            </section>
+            <!-- Shop -->
+            <section class="shop" id="shop">
+                <!-- Heading -->
+                <h2 class="heading">Shop Now</h2>
+                <!-- Shop Content -->
+                <div class="shop-content container">
+                <h3 class="shop-title" id="Headphones">Headphones</h3>
                 <div class="shop-container container">
                     <!-- 1st Box -->
-                     <div class="box">
-                         <img class="product-img" src="https://ca.jbl.com/dw/image/v2/AAUJ_PRD/on/demandware.static/-/Sites-masterCatalog_Harman/default/dwb85a6378/1_JBL_BOOMBOX_3_HERO_BLACK_33216_x2.png?sw=537&sfrm=png" alt="">
-                         <h3 class="product-title">JBL Boombox 3</h3>
-                         <span class="price">$599.98</span>
-                         <i class='bx bx-cart-alt add-cart'></i>
-                     </div>
-                     <!-- 2nd Box -->
-                     <div class="box">
-                         <img class="product-img" src="https://ca.jbl.com/dw/image/v2/AAUJ_PRD/on/demandware.static/-/Sites-masterCatalog_Harman/default/dw2530d28f/JBL_XTREME_3_HERO_0010_x2.png?sw=537&sfrm=png" alt="">
-                         <h3 class="product-title">JBL Xtreme 3</h3>
-                         <span class="price">$379.98</span>
-                         <i class='bx bx-cart-alt add-cart'></i>
-                     </div>
-                     <!-- 3rd Box -->
-                     <div class="box">
-                         <img class="product-img" src="https://ca.jbl.com/dw/image/v2/AAUJ_PRD/on/demandware.static/-/Sites-masterCatalog_Harman/default/dwdb416039/JBL_BOOMBOX_2_HERO_020_x1.jpg?sw=270&sh=330&sm=fit&sfrm=png" alt="">
-                         <h3 class="product-title">JBL Boombox 2</h3>
-                         <span class="price">$399.98</span>
-                         <i class='bx bx-cart-alt add-cart'></i>
-                     </div>
-                     <!-- 4th Box -->
-                     <div class="box">
-                         <img class="product-img" src="https://ca.jbl.com/dw/image/v2/AAUJ_PRD/on/demandware.static/-/Sites-masterCatalog_Harman/default/dw36e751bc/JBL_Flip5_Product%20Photo_Hero_Midnight%20Black.jpg?sw=270&sh=330&sm=fit&sfrm=png" alt="">
-                         <h3 class="product-title">JBL Flip 5</h3>
-                         <span class="price">$159.98</span>
-                         <i class='bx bx-cart-alt add-cart'></i>
-                     </div>
-                     <!-- 5th Box -->
-                     <div class="box">
-                         <img class="product-img" src="https://ca.jbl.com/dw/image/v2/AAUJ_PRD/on/demandware.static/-/Sites-masterCatalog_Harman/default/dw4e9c027b/Clip3_Side_Alt_Camo-1605x1605px.png?sw=537&sfrm=png" alt="">
-                         <h3 class="product-title">JBL Clip 3</h3>
-                         <span class="price">$89.98</span>
-                         <i class='bx bx-cart-alt add-cart'></i>
-                     </div>
-                     <!-- 6th Box -->
-                     <div class="box">
-                         <img class="product-img" src="https://ca.jbl.com/dw/image/v2/AAUJ_PRD/on/demandware.static/-/Sites-masterCatalog_Harman/default/dw125258a0/1_JBL_FLIP6_HERO_GREY_29399_x1.png?sw=537&sfrm=png" alt="">
-                         <h3 class="product-title">JBL Flip 6</h3>
-                         <span class="price">$169.98</span>
-                         <i class='bx bx-cart-alt add-cart'></i>
-                     </div>
-                     <!-- 7th Box -->
-                     <div class="box">
-                         <img class="product-img" src="https://ca.jbl.com/dw/image/v2/AAUJ_PRD/on/demandware.static/-/Sites-masterCatalog_Harman/default/dw21f0813f/JBL_Party_Box_200HERO.jpg?sw=270&sh=330&sm=fit&sfrm=png" alt="">
-                         <h3 class="product-title">JBL PartyBox 200</h3>
-                         <span class="price">$549.98</span>
-                         <i class='bx bx-cart-alt add-cart'></i>
-                     </div>
-                     <!-- 8th Box -->
-                     <div class="box">
-                         <img class="product-img" src="https://ca.jbl.com/dw/image/v2/AAUJ_PRD/on/demandware.static/-/Sites-masterCatalog_Harman/default/dwb7f7368f/JBL_PULSE4_HERO_WHITE_001.png?sw=537&sfrm=png" alt="">
-                         <h3 class="product-title">JBL Pulse 4</h3>
-                         <span class="price">$299.98</span>
-                         <i class='bx bx-cart-alt add-cart'></i>
-                     </div>
-                     <!-- 9th Box -->
-                     <div class="box">
-                         <img class="product-img" src="https://ca.jbl.com/dw/image/v2/AAUJ_PRD/on/demandware.static/-/Sites-masterCatalog_Harman/default/dwfb16af7c/1_JBL_PARTYBOX_710_HERO_0031_x8.jpg?sw=270&sh=330&sm=fit&sfrm=png" alt="">
-                         <h3 class="product-title">JBL PartyBox 710</h3>
-                         <span class="price">$999.98</span>
-                         <i class='bx bx-cart-alt add-cart'></i>
-                     </div>
+                        <div class="box">
+                            <img class="product-img" src="https://ca.jbl.com/dw/image/v2/AAUJ_PRD/on/demandware.static/-/Sites-masterCatalog_Harman/default/dw1473ec51/JBL%20Everest_Elite_750NC_Blue_Hero_1605x1605px.jpg?sw=270&sh=330&sm=fit&sfrm=png" alt="">
+                            <h3 class="product-title">JBL EVEREST™ ELITE 750NC</h3>
+                            <span class="price">$429.99</span>
+                            <i class='bx bx-cart-alt add-cart'></i>
+                        </div>
+                        <!-- 2nd Box -->
+                        <div class="box">
+                            <img class="product-img" src="https://ca.jbl.com/dw/image/v2/AAUJ_PRD/on/demandware.static/-/Sites-masterCatalog_Harman/default/dwc45003f0/JBL_LIVE_460NC_Product%20Image_Hero_White.jpg?sw=270&sh=330&sm=fit&sfrm=png" alt="">
+                            <h3 class="product-title">JBL Live 460NC</h3>
+                            <span class="price">$169.98</span>
+                            <i class='bx bx-cart-alt add-cart'></i>
+                        </div>
+                        <!-- 3rd Box -->
+                        <div class="box">
+                            <img class="product-img" src="https://ca.jbl.com/dw/image/v2/AAUJ_PRD/on/demandware.static/-/Sites-masterCatalog_Harman/default/dwe9213a1f/JBL_Tune500_Hero_Pink_1605x1605.png?sw=537&sfrm=png" alt="">
+                            <h3 class="product-title">JBL Tune 500</h3>
+                            <span class="price">$34.98</span>
+                            <i class='bx bx-cart-alt add-cart'></i>
+                        </div>
+                        <!-- 4th Box -->
+                        <div class="box">
+                            <img class="product-img" src="https://ca.jbl.com/dw/image/v2/AAUJ_PRD/on/demandware.static/-/Sites-masterCatalog_Harman/default/dw12696db0/JBL_TUNE_660NC_Product%20Image_Detail%202_Black.png?sw=537&sfrm=png" alt="">
+                            <h3 class="product-title">JBL Tune 660NC</h3>
+                            <span class="price">$299.98</span>
+                            <i class='bx bx-cart-alt add-cart'></i>
+                        </div>
+                        <!-- 5th Box -->
+                        <div class="box">
+                            <img class="product-img" src="https://ca.jbl.com/dw/image/v2/AAUJ_PRD/on/demandware.static/-/Sites-masterCatalog_Harman/default/dwb51cdc17/600BTNC_Hero_White-1605x1605px.png?sw=537&sfrm=png" alt="">
+                            <h3 class="product-title">JBL Tune 600BTNC</h3>
+                            <span class="price">$139.99</span>
+                            <i class='bx bx-cart-alt add-cart'></i>
+                        </div>
+                        <!-- 6th Box -->
+                        <div class="box">
+                            <img class="product-img" src="https://ca.jbl.com/dw/image/v2/AAUJ_PRD/on/demandware.static/-/Sites-masterCatalog_Harman/default/dwa6c2f6d2/1.%20JBL_TOUR_ONE_Product%20Image_Hero.png?sw=537&sfrm=png" alt="">
+                            <h3 class="product-title">JBL Tour One</h3>
+                            <span class="price">$399.98</span>
+                            <i class='bx bx-cart-alt add-cart'></i>
+                        </div>
+                        <!-- 7th Box -->
+                        <div class="box">
+                            <img class="product-img" src="https://ca.jbl.com/dw/image/v2/AAUJ_PRD/on/demandware.static/-/Sites-masterCatalog_Harman/default/dwdf99cd0e/JBL_CLUB_ONE_Product%20Photo_HERO.png?sw=537&sfrm=png" alt="">
+                            <h3 class="product-title">JBL CLUB ONE</h3>
+                            <span class="price">$469.98</span>
+                            <i class='bx bx-cart-alt add-cart'></i>
+                        </div>
+                        <!-- 8th Box -->
+                        <div class="box">
+                            <img class="product-img" src="https://ca.jbl.com/dw/image/v2/AAUJ_PRD/on/demandware.static/-/Sites-masterCatalog_Harman/default/dw268216eb/JBL_QUANTUM%20ONE_Product%20Image_Angle.png?sw=537&sfrm=png" alt="">
+                            <h3 class="product-title">JBL Quantum One</h3>
+                            <span class="price">$399.98</span>
+                            <i class='bx bx-cart-alt add-cart'></i>
+                        </div>
+                        <!-- 9th Box -->
+                        <div class="box">
+                            <img class="product-img" src="https://ca.jbl.com/dw/image/v2/AAUJ_PRD/on/demandware.static/-/Sites-masterCatalog_Harman/default/dw140e03b4/JBL_CLUB_950NC_Product%20Photo_HERO.png?sw=537&sfrm=png" alt="">
+                            <h3 class="product-title">JBL Club 950NC</h3>
+                            <span class="price">$349.98</span>
+                            <i class='bx bx-cart-alt add-cart'></i>
+                        </div>
                 </div>
-                <a href="/speakers.html"><pre>View all >></pre></a>
-            </div>
+                <a href="/headphone.html"><pre>View all >></pre></a>
+                </div>
 
-            <div class="shop-content container">
-                <h3 class="shop-title" id="Pods">Pods</h3>
-                <div class="shop-container container">
-                    <!-- 1st Box -->
-                     <div class="box">
-                         <img class="product-img" src="https://ca.jbl.com/dw/image/v2/AAUJ_PRD/on/demandware.static/-/Sites-masterCatalog_Harman/default/dwf1d4ad4f/1.JBL_ENDURANCE_RACE_TWS_Product%20Image_Hero_Blue.png?sw=537&sfrm=png" alt="">
-                         <h3 class="product-title">JBL Endurance Race TWS</h3>
-                         <span class="price">$69.98</span>
-                         <i class='bx bx-cart-alt add-cart'></i>
-                     </div>
-                     <!-- 2nd Box -->
-                     <div class="box">
-                         <img class="product-img" src="https://ca.jbl.com/dw/image/v2/AAUJ_PRD/on/demandware.static/-/Sites-masterCatalog_Harman/default/dw431f8452/1.JBL_VIBE_300TWS_Product%20Image_Hero_Black.png?sw=537&sfrm=png" alt="">
-                         <h3 class="product-title">JBL Vibe 300TWS </h3>
-                         <span class="price">$129.98</span>
-                         <i class='bx bx-cart-alt add-cart'></i>
-                     </div>
-                     <!-- 3rd Box -->
-                     <div class="box">
-                         <img class="product-img" src="https://ca.jbl.com/dw/image/v2/AAUJ_PRD/on/demandware.static/-/Sites-masterCatalog_Harman/default/dwe674bf56/1.JBL_TUNE_130NC_Product%20image_Hero_Blue.png?sw=537&sfrm=png" alt="">
-                         <h3 class="product-title">JBL Tune 130NC TWS</h3>
-                         <span class="price">$129.98</span>
-                         <i class='bx bx-cart-alt add-cart'></i>
-                     </div>
-                     <!-- 4th Box -->
-                     <div class="box">
-                         <img class="product-img" src="https://ca.jbl.com/dw/image/v2/AAUJ_PRD/on/demandware.static/-/Sites-masterCatalog_Harman/default/dw5430f047/1.%20JBL_Tour_PRO+%20TWS_Product%20Image_Hero.png?sw=537&sfrm=png" alt="">
-                         <h3 class="product-title">JBL Tour Pro+ TWS</h3>
-                         <span class="price">$299.98</span>
-                         <i class='bx bx-cart-alt add-cart'></i>
-                     </div>
-                     <!-- 5th Box -->
-                     <div class="box">
-                         <img class="product-img" src="https://ca.jbl.com/dw/image/v2/AAUJ_PRD/on/demandware.static/-/Sites-masterCatalog_Harman/default/dw3ec293c9/JBL_TUNE%20225TWS_Hero_Product%20Image_White.jpg?sw=270&sh=330&sm=fit&sfrm=png" alt="">
-                         <h3 class="product-title">JBL Tune 255TWS</h3>
-                         <span class="price">$129.98</span>
-                         <i class='bx bx-cart-alt add-cart'></i>
-                     </div>
-                     <!-- 6th Box -->
-                     <div class="box">
-                         <img class="product-img" src="https://ca.jbl.com/dw/image/v2/AAUJ_PRD/on/demandware.static/-/Sites-masterCatalog_Harman/default/dwca95a8f1/JBL_FREEx_Hero_Black.png?sw=537&sfrm=png" alt="">
-                         <h3 class="product-title">JBL Free X</h3>
-                         <span class="price">$219.98</span>
-                         <i class='bx bx-cart-alt add-cart'></i>
-                     </div>
-                     <!-- 7th Box -->
-                     <div class="box">
-                         <img class="product-img" src="https://ca.jbl.com/dw/image/v2/AAUJ_PRD/on/demandware.static/-/Sites-masterCatalog_Harman/default/dw2382f981/1.JBL_Reflect%20Aero_Product%20Image_Hero_Mint.png?sw=537&sfrm=png" alt="">
-                         <h3 class="product-title">JBL Reflect Aero TWS</h3>
-                         <span class="price">$199.98</span>
-                         <i class='bx bx-cart-alt add-cart'></i>
-                     </div>
-                     <!-- 8th Box -->
-                     <div class="box">
-                         <img class="product-img" src="https://ca.jbl.com/dw/image/v2/AAUJ_PRD/on/demandware.static/-/Sites-masterCatalog_Harman/default/dw02c3dba7/1.JBL_Wave_VIBE_100TWS_Product%20Images_Hero_Blue.png?sw=537&sfrm=png" alt="">
-                         <h3 class="product-title">JBL Vibe 100TWS</h3>
-                         <span class="price">$69.98</span>
-                         <i class='bx bx-cart-alt add-cart'></i>
-                     </div>
-                     <!-- 9th Box -->
-                     <div class="box">
-                         <img class="product-img" src="https://ca.jbl.com/dw/image/v2/AAUJ_PRD/on/demandware.static/-/Sites-masterCatalog_Harman/default/dwa5ebab04/JBL_Endurance_Peak_Charger_Open_Black_1605x1605.png?sw=537&sfrm=png" alt="">
-                         <h3 class="product-title">JBL Endurance PEAK</h3>
-                         <span class="price">$179.98</span>
-                         <i class='bx bx-cart-alt add-cart'></i>
-                     </div>
-                </div>
-                <a href="/pods.html"><pre>View all >></pre></a>
-            </div>
-        </section>
-        <!--    Footer -->
-        <section class="footer">
-           <div class="footer-content container">
-                <div class="footer-box">
-                    <a href="" class="logo"><img src="/img/j.b.l.png" alt=""></a>
-                    <div class="social">
-                        <a href="https://www.instagram.com/val_hunter_/" target="_blank"><i class='bx bxl-instagram'></i></a>
-                        <a href="https://twitter.com/val_hunter_" target="_blank"><i class='bx bxl-twitter'></i></a>
-                        <a href="https://api.whatsapp.com/send/?phone=2347011735361&text&type=phone_number&app_absent=0" target="_blank"><i class='bx bxl-whatsapp'></i></a>
-                        <a href="https://www.linkedin.com/in/chukwuemeka-ogbanu-65791b244/" target="_blank"><i class='bx bxl-linkedin'></i></a>
-                        <a href="https://github.com/Favour-OGB" target="_blank"><i class='bx bxl-github'></i></a>
+                <div class="shop-content container">
+                    <h3 class="shop-title" id="Speakers">Speakers</h3>
+                    <div class="shop-container container">
+                        <!-- 1st Box -->
+                        <div class="box">
+                            <img class="product-img" src="https://ca.jbl.com/dw/image/v2/AAUJ_PRD/on/demandware.static/-/Sites-masterCatalog_Harman/default/dwb85a6378/1_JBL_BOOMBOX_3_HERO_BLACK_33216_x2.png?sw=537&sfrm=png" alt="">
+                            <h3 class="product-title">JBL Boombox 3</h3>
+                            <span class="price">$599.98</span>
+                            <i class='bx bx-cart-alt add-cart'></i>
+                        </div>
+                        <!-- 2nd Box -->
+                        <div class="box">
+                            <img class="product-img" src="https://ca.jbl.com/dw/image/v2/AAUJ_PRD/on/demandware.static/-/Sites-masterCatalog_Harman/default/dw2530d28f/JBL_XTREME_3_HERO_0010_x2.png?sw=537&sfrm=png" alt="">
+                            <h3 class="product-title">JBL Xtreme 3</h3>
+                            <span class="price">$379.98</span>
+                            <i class='bx bx-cart-alt add-cart'></i>
+                        </div>
+                        <!-- 3rd Box -->
+                        <div class="box">
+                            <img class="product-img" src="https://ca.jbl.com/dw/image/v2/AAUJ_PRD/on/demandware.static/-/Sites-masterCatalog_Harman/default/dwdb416039/JBL_BOOMBOX_2_HERO_020_x1.jpg?sw=270&sh=330&sm=fit&sfrm=png" alt="">
+                            <h3 class="product-title">JBL Boombox 2</h3>
+                            <span class="price">$399.98</span>
+                            <i class='bx bx-cart-alt add-cart'></i>
+                        </div>
+                        <!-- 4th Box -->
+                        <div class="box">
+                            <img class="product-img" src="https://ca.jbl.com/dw/image/v2/AAUJ_PRD/on/demandware.static/-/Sites-masterCatalog_Harman/default/dw36e751bc/JBL_Flip5_Product%20Photo_Hero_Midnight%20Black.jpg?sw=270&sh=330&sm=fit&sfrm=png" alt="">
+                            <h3 class="product-title">JBL Flip 5</h3>
+                            <span class="price">$159.98</span>
+                            <i class='bx bx-cart-alt add-cart'></i>
+                        </div>
+                        <!-- 5th Box -->
+                        <div class="box">
+                            <img class="product-img" src="https://ca.jbl.com/dw/image/v2/AAUJ_PRD/on/demandware.static/-/Sites-masterCatalog_Harman/default/dw4e9c027b/Clip3_Side_Alt_Camo-1605x1605px.png?sw=537&sfrm=png" alt="">
+                            <h3 class="product-title">JBL Clip 3</h3>
+                            <span class="price">$89.98</span>
+                            <i class='bx bx-cart-alt add-cart'></i>
+                        </div>
+                        <!-- 6th Box -->
+                        <div class="box">
+                            <img class="product-img" src="https://ca.jbl.com/dw/image/v2/AAUJ_PRD/on/demandware.static/-/Sites-masterCatalog_Harman/default/dw125258a0/1_JBL_FLIP6_HERO_GREY_29399_x1.png?sw=537&sfrm=png" alt="">
+                            <h3 class="product-title">JBL Flip 6</h3>
+                            <span class="price">$169.98</span>
+                            <i class='bx bx-cart-alt add-cart'></i>
+                        </div>
+                        <!-- 7th Box -->
+                        <div class="box">
+                            <img class="product-img" src="https://ca.jbl.com/dw/image/v2/AAUJ_PRD/on/demandware.static/-/Sites-masterCatalog_Harman/default/dw21f0813f/JBL_Party_Box_200HERO.jpg?sw=270&sh=330&sm=fit&sfrm=png" alt="">
+                            <h3 class="product-title">JBL PartyBox 200</h3>
+                            <span class="price">$549.98</span>
+                            <i class='bx bx-cart-alt add-cart'></i>
+                        </div>
+                        <!-- 8th Box -->
+                        <div class="box">
+                            <img class="product-img" src="https://ca.jbl.com/dw/image/v2/AAUJ_PRD/on/demandware.static/-/Sites-masterCatalog_Harman/default/dwb7f7368f/JBL_PULSE4_HERO_WHITE_001.png?sw=537&sfrm=png" alt="">
+                            <h3 class="product-title">JBL Pulse 4</h3>
+                            <span class="price">$299.98</span>
+                            <i class='bx bx-cart-alt add-cart'></i>
+                        </div>
+                        <!-- 9th Box -->
+                        <div class="box">
+                            <img class="product-img" src="https://ca.jbl.com/dw/image/v2/AAUJ_PRD/on/demandware.static/-/Sites-masterCatalog_Harman/default/dwfb16af7c/1_JBL_PARTYBOX_710_HERO_0031_x8.jpg?sw=270&sh=330&sm=fit&sfrm=png" alt="">
+                            <h3 class="product-title">JBL PartyBox 710</h3>
+                            <span class="price">$999.98</span>
+                            <i class='bx bx-cart-alt add-cart'></i>
+                        </div>
                     </div>
+                    <a href="/speakers.html"><pre>View all >></pre></a>
                 </div>
-                <div class="footer-box">
-                    <h2>Products</h2>
-                    <a href="#">Headphones</a>
-                    <a href="#">Speakers</a>
-                    <a href="#">Pods</a>
-                    <a href="#">Earpiece</a>
+
+                <div class="shop-content container">
+                    <h3 class="shop-title" id="Pods">Pods</h3>
+                    <div class="shop-container container">
+                        <!-- 1st Box -->
+                        <div class="box">
+                            <img class="product-img" src="https://ca.jbl.com/dw/image/v2/AAUJ_PRD/on/demandware.static/-/Sites-masterCatalog_Harman/default/dwf1d4ad4f/1.JBL_ENDURANCE_RACE_TWS_Product%20Image_Hero_Blue.png?sw=537&sfrm=png" alt="">
+                            <h3 class="product-title">JBL Endurance Race TWS</h3>
+                            <span class="price">$69.98</span>
+                            <i class='bx bx-cart-alt add-cart'></i>
+                        </div>
+                        <!-- 2nd Box -->
+                        <div class="box">
+                            <img class="product-img" src="https://ca.jbl.com/dw/image/v2/AAUJ_PRD/on/demandware.static/-/Sites-masterCatalog_Harman/default/dw431f8452/1.JBL_VIBE_300TWS_Product%20Image_Hero_Black.png?sw=537&sfrm=png" alt="">
+                            <h3 class="product-title">JBL Vibe 300TWS </h3>
+                            <span class="price">$129.98</span>
+                            <i class='bx bx-cart-alt add-cart'></i>
+                        </div>
+                        <!-- 3rd Box -->
+                        <div class="box">
+                            <img class="product-img" src="https://ca.jbl.com/dw/image/v2/AAUJ_PRD/on/demandware.static/-/Sites-masterCatalog_Harman/default/dwe674bf56/1.JBL_TUNE_130NC_Product%20image_Hero_Blue.png?sw=537&sfrm=png" alt="">
+                            <h3 class="product-title">JBL Tune 130NC TWS</h3>
+                            <span class="price">$129.98</span>
+                            <i class='bx bx-cart-alt add-cart'></i>
+                        </div>
+                        <!-- 4th Box -->
+                        <div class="box">
+                            <img class="product-img" src="https://ca.jbl.com/dw/image/v2/AAUJ_PRD/on/demandware.static/-/Sites-masterCatalog_Harman/default/dw5430f047/1.%20JBL_Tour_PRO+%20TWS_Product%20Image_Hero.png?sw=537&sfrm=png" alt="">
+                            <h3 class="product-title">JBL Tour Pro+ TWS</h3>
+                            <span class="price">$299.98</span>
+                            <i class='bx bx-cart-alt add-cart'></i>
+                        </div>
+                        <!-- 5th Box -->
+                        <div class="box">
+                            <img class="product-img" src="https://ca.jbl.com/dw/image/v2/AAUJ_PRD/on/demandware.static/-/Sites-masterCatalog_Harman/default/dw3ec293c9/JBL_TUNE%20225TWS_Hero_Product%20Image_White.jpg?sw=270&sh=330&sm=fit&sfrm=png" alt="">
+                            <h3 class="product-title">JBL Tune 255TWS</h3>
+                            <span class="price">$129.98</span>
+                            <i class='bx bx-cart-alt add-cart'></i>
+                        </div>
+                        <!-- 6th Box -->
+                        <div class="box">
+                            <img class="product-img" src="https://ca.jbl.com/dw/image/v2/AAUJ_PRD/on/demandware.static/-/Sites-masterCatalog_Harman/default/dwca95a8f1/JBL_FREEx_Hero_Black.png?sw=537&sfrm=png" alt="">
+                            <h3 class="product-title">JBL Free X</h3>
+                            <span class="price">$219.98</span>
+                            <i class='bx bx-cart-alt add-cart'></i>
+                        </div>
+                        <!-- 7th Box -->
+                        <div class="box">
+                            <img class="product-img" src="https://ca.jbl.com/dw/image/v2/AAUJ_PRD/on/demandware.static/-/Sites-masterCatalog_Harman/default/dw2382f981/1.JBL_Reflect%20Aero_Product%20Image_Hero_Mint.png?sw=537&sfrm=png" alt="">
+                            <h3 class="product-title">JBL Reflect Aero TWS</h3>
+                            <span class="price">$199.98</span>
+                            <i class='bx bx-cart-alt add-cart'></i>
+                        </div>
+                        <!-- 8th Box -->
+                        <div class="box">
+                            <img class="product-img" src="https://ca.jbl.com/dw/image/v2/AAUJ_PRD/on/demandware.static/-/Sites-masterCatalog_Harman/default/dw02c3dba7/1.JBL_Wave_VIBE_100TWS_Product%20Images_Hero_Blue.png?sw=537&sfrm=png" alt="">
+                            <h3 class="product-title">JBL Vibe 100TWS</h3>
+                            <span class="price">$69.98</span>
+                            <i class='bx bx-cart-alt add-cart'></i>
+                        </div>
+                        <!-- 9th Box -->
+                        <div class="box">
+                            <img class="product-img" src="https://ca.jbl.com/dw/image/v2/AAUJ_PRD/on/demandware.static/-/Sites-masterCatalog_Harman/default/dwa5ebab04/JBL_Endurance_Peak_Charger_Open_Black_1605x1605.png?sw=537&sfrm=png" alt="">
+                            <h3 class="product-title">JBL Endurance PEAK</h3>
+                            <span class="price">$179.98</span>
+                            <i class='bx bx-cart-alt add-cart'></i>
+                        </div>
+                    </div>
+                    <a href="/pods.html"><pre>View all >></pre></a>
                 </div>
-                <div class="footer-box">
-                    <h2>Payment</h2>
-                    <a href="#">Return Policy</a>
-                    <a href="#">Refunds Policy</a>
-                    <a href="#">Support</a>
-                    <a href="#">Terms Of Use</a>
-                </div>
-           </div>
-        </section>
+            </section>
+            <!--    Footer -->
+            <section class="footer">
+            <div class="footer-content container">
+                    <div class="footer-box">
+                        <a href="" class="logo"><img src="/img/j.b.l.png" alt=""></a>
+                        <div class="social">
+                            <a href="https://www.instagram.com/val_hunter_/" target="_blank"><i class='bx bxl-instagram'></i></a>
+                            <a href="https://twitter.com/val_hunter_" target="_blank"><i class='bx bxl-twitter'></i></a>
+                            <a href="https://api.whatsapp.com/send/?phone=2347011735361&text&type=phone_number&app_absent=0" target="_blank"><i class='bx bxl-whatsapp'></i></a>
+                            <a href="https://www.linkedin.com/in/chukwuemeka-ogbanu-65791b244/" target="_blank"><i class='bx bxl-linkedin'></i></a>
+                            <a href="https://github.com/Favour-OGB" target="_blank"><i class='bx bxl-github'></i></a>
+                        </div>
+                    </div>
+                    <div class="footer-box">
+                        <h2>Products</h2>
+                        <a href="#">Headphones</a>
+                        <a href="#">Speakers</a>
+                        <a href="#">Pods</a>
+                        <a href="#">Earpiece</a>
+                    </div>
+                    <div class="footer-box">
+                        <h2>Payment</h2>
+                        <a href="#">Return Policy</a>
+                        <a href="#">Refunds Policy</a>
+                        <a href="#">Support</a>
+                        <a href="#">Terms Of Use</a>
+                    </div>
+            </div>
+            </section>
+        </div>
+
+        
         <!-- Copyright -->
         <div class="copyright">
             <p>&#169; Chukwuemeka-OGB All Rights Reserved</p>
         </div>
     </div>
+ 
 
+   
     <!-- ScrollReveal Animation -->
     <script src="https://unpkg.com/scrollreveal"></script>
     <!-- Script to swiper js -->
